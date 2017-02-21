@@ -1,0 +1,26 @@
+<section>
+        <article>
+            <h3>
+                Event Binding
+            </h3>
+            <div>
+                <button (click)="onClick()" >
+                    Mostar Mensagem
+                </button>
+                <br/>
+                <input type="text" 
+                (keyup)="onKeyUp($event)" 
+                (keyup.enter)="onSave(campo.value)"
+                (blur)="onSave(campo.value)" 
+                #campo
+                />
+
+                <div>Conteudo Atual : {{ conteudoAtual }}</div>    
+                <div>Conteudo Armazenado : {{ conteudoArmazenado }}</div>  
+                <br/>
+                <span (mouseover)="onMouseSpan()"
+                      (mouseout)="onMouseSpan()"
+                >Estilos no Angular 2</span>    
+            </div>
+        </article>
+</section>
