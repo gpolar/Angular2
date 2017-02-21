@@ -29,7 +29,9 @@ var EventosComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'eventos-binding',
-            templateUrl: 'eventos.component.html'
+            templateUrl: 'eventos.component.html',
+            styles: [".destaque {\n             background-color: yellow;\n             font-weight: bold; } "
+            ]
         }), 
         __metadata('design:paramtypes', [])
     ], EventosComponent);
